@@ -1,0 +1,142 @@
+:root{
+ --primary: #ffe8e8;
+ --secondary : #007ab5;
+ --font-primary : #005a85;
+ --font-secondary : #004262;
+ --modal-color : rgb(168, 89, 99);
+}
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+.app-main .app-note-area .app-note-area-container .single-note{
+    border-radius: 15px;
+    background-color: rgba(255, 182, 193,0.8);
+    min-width: 250px;
+    min-height: 225px;
+    padding: 10px;
+    text-decoration :none;
+}
+
+
+
+.app-main .app-note-area .app-note-area-container .single-note .single-note-title{
+ font-family: cursive;
+ font-size: 25px;
+ text-transform: capitalize;
+ width: 100%;
+ height: 20%;
+}
+
+
+.app-main .app-note-area .app-note-area-container .single-note .single-note-notes{
+ width: 100%;
+ height: 65%;
+ font-size: 18px;
+ font-family: serif;
+ color: var(--font-secondary);
+ padding: 15px 0;
+}
+
+
+
+.app-main .app-note-area .app-note-area-container .single-note .single-note-header{
+ display: flex;
+ align-items: center;
+ justify-content :space-between;
+ font-size: 15px;
+ width: 100%;
+ background-color: rgba(168, 89, 99,0.5);
+ border-radius: 10px;
+ padding: 5px;
+ color: var(--primary);
+}
+
+.app-main .app-note-area .app-note-area-container .single-note .single-note-header .read-more{
+  padding: 5px;
+  display: flex;
+  justify-content :center;
+  align-items :center;
+  background-color : var(--modal-color);
+  border-radius : 50%;
+  color : var(--primary);
+}
+
+.app-main .app-note-area .app-note-area-container .single-note .single-note-feature{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 15%;
+ text-transform : capitalize;
+}
+
+.app-main .app-note-area .app-note-area-container .single-note .single-note-feature .single-note-feature-subject{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ font-family: sans-serif;
+ font-size: 15px;
+ padding: 2px 5px;
+ font-weight: 600;
+ color: var(--modal-color);
+ background-color: rgba(0, 66, 98,0.7);
+ color: var(--primary);
+ border-radius: 5px;
+}
+
+.app-main .app-note-area .app-note-area-container .single-note .single-note-feature .single-note-feature-subject .single-note-feature-subject-icon{
+ font-size: 12px;
+ margin-right: 5px;
+}
+
+
+.app-main .app-note-area .app-note-area-container .single-note .single-note-feature .single-note-feature-btns{
+ width: 25%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ font-size: 20px;
+}
+
+.app-main .app-note-area .app-note-area-container .single-note .single-note-feature .single-note-feature-btns .feature-btn{
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 10%;
+}
+
+.app-main .app-note-area .app-note-area-container .single-note .single-note-feature .single-note-feature-btns .feature-btn:hover{
+ padding: 4px;
+ color: var(--primary);
+}
+
+
+.app-main .app-note-area .app-note-area-container .single-note .single-note-feature .single-note-feature-btns .edit{
+ color: var(--modal-color);
+}
+
+.app-main .app-note-area .app-note-area-container .single-note .single-note-feature .single-note-feature-btns .edit:hover{
+ background-color: #81b214;
+}
+
+.app-main .app-note-area .app-note-area-container .single-note .single-note-feature .single-note-feature-btns .delete{
+ color: var(--modal-color);
+}
+
+.app-main .app-note-area .app-note-area-container .single-note .single-note-feature .single-note-feature-btns .delete:hover{
+ background-color: #dc2f2f;
+}
+
+@media screen and (max-width : 267){
+  .app-main .app-note-area .app-note-area-container .single-note{
+    width : 225px;
+  }
+
+  .app-main .app-note-area .app-note-area-container .single-note .single-note-title{
+      height : 20px;
+  }
+
+}

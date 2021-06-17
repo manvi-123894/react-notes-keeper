@@ -1,0 +1,98 @@
+:root{
+ --primary: #ffe8e8;
+ --secondary : #007ab5;
+ --font-primary : #005a85;
+ --font-secondary : #004262;
+ --modal-color : rgb(168, 89, 99);
+}
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+
+body{
+ background-color: var(--primary);
+}
+
+.app-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-main .caution-div{
+    width: 100%;
+    min-height: 25px;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    z-index: 5;
+    margin-bottom: 15px;
+    display : flex;
+    justify-content : center;
+}
+
+.app-main .caution-div .caution-para{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius : 10px;
+}
+
+.app-main .caution-div .caution-para.fail{
+    background-color: orange;
+    color: #fff;
+}
+
+.app-main .caution-div .caution-para.success{
+    background-color: rgb(172, 209, 130);
+    color: #fff;
+}
+
+.app-main .app-note-area{
+    width: 100%;
+    min-height: 500px;
+    max-height: fit-content;
+    position: absolute;
+    top: 100px; 
+    padding: 500px;
+    padding: 10px;
+}
+
+.app-main .app-note-area .app-note-area-heading{
+    font-size: 50px;
+    text-align: center;
+    font-family: cursive;
+    color: rgb(212, 154, 162);
+    height: 75vh;
+}
+
+.app-main .app-note-area .app-note-area-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.transparent{
+    opacity: 0.1;
+}
+
+@media screen and (max-width : 267px){
+    .app-main .app-note-area .app-note-area-container{
+         grid-gap: 5px;
+         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .app-main .app-note-area{
+        padding : 5px;
+    }
+}
